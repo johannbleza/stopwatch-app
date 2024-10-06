@@ -83,6 +83,7 @@ const resetTimer = () => {
   lapSec = 0;
   lapMin = 0;
   currentLap = 1;
+  lapNumber.innerHTML = 'Lap 1'
   timer.innerHTML = "00:00:00"
   lapTime.innerHTML = "00:00:00"
   laps = []
