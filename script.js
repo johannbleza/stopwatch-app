@@ -23,6 +23,7 @@ let minutes = 0;
 let lapMilli = 0;
 let lapSec = 0;
 let lapMin = 0;
+let currentLap = 1;
 
 let currenTime = timer.innerHTML = `${leadZero(minutes)}:${leadZero(seconds)}:${leadZero(milliseconds)}`;
 
@@ -81,6 +82,7 @@ const resetTimer = () => {
   lapMilli = 0;
   lapSec = 0;
   lapMin = 0;
+  currentLap = 1;
   timer.innerHTML = "00:00:00"
   lapTime.innerHTML = "00:00:00"
   laps = []
@@ -90,7 +92,6 @@ const resetTimer = () => {
 
 lapButton.addEventListener('click', () => addLap())
 
-let currentLap = 1;
 
 const addLap = () => {
   if (isRunning) {
