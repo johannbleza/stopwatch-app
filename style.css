@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background-color: #0F0F17;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timer-container {
+  padding: 40px;
+  display: flex;
+  aspect-ratio: 1/1;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 16px solid #5262ED;
+}
+
+.timer {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+
+
+
+button {
+  color: #ffff;
+  background-color: #1B1D2B;
+  border: none;
+  padding: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button svg {
+  width: 32px;
+  height: 32px;
+  fill: #828EFA;
+}
+
+.startPause {
+  padding: 24px;
+
+}
+
+.lap {
+  transform: scaleX(-1);
+}
+
+
+.laps-list {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.lap-container {
+  background-color: #212331;
+  display: flex;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lap-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #565B83;
+  font-weight: 800;
+}
+
+.lap-label svg {
+  fill: #565B83;
+  width: 16px;
+}
+
+.current-lap {
+  margin-bottom: -4px;
+}
